@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var content="content";
+var div=document.createElement("div");
+div.id="divt";
+var span = document.createElement("span");
+span.id="hspan";
+span.style.backgroundColor="yellow";
+var node = document.createTextNode("This is new.");
+span.appendChild(node);
+var span2 = document.createElement("span");
+
+span2.style.backgroundColor="yellow";
+
+var node = document.createTextNode(content);
+span.appendChild(node);
+var element = document.getElementById("div1");
+div.appendChild(span);
+div.appendChild(span2);
+document.body.appendChild(div);
+
+$(document).ready(function() {
+
+$('#p1').mouseover(function() {
+ alert('test');  
+});
+
+
+
+});
+
+</script>
+
+</body>
+</html>
+

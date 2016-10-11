@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+#test {
+    display: none;
+    color: blue;
+}
+</style>
+<script type="javascript">
+$(function() {
+    $(document).click(function(e) {
+        var o = {
+            left: e.pageX,
+            top: e.pageY
+        };
+        $("#test").show(2000).offset(o);
+    });
+});
+
+</script>
+</head>
+<body>
+
+<img id="myimg" src="http://placekitten.com/200/300"/>
+
+<span id="test">This is a test</span>
+</body>
+</html>
